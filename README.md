@@ -9,3 +9,4 @@ Currently hosting:
 | --- | --- | --- | --- |
 | DOPC | 6-site/7-site[virtual] | MS-CG/REM	| 10.1021/acs.jctc.8b01033 |
 | DPPC | 7-site[virtual]	| MS-CG/REM	| 10.1021/acs.jctc.8b01033 |
+| Spike_ACE2 | 60/50/70 sites	| EDCG/HENM/REM	| TBD |
