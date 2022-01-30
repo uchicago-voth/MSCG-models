@@ -1,0 +1,13 @@
+Folders:
+
+custom_code - Extra pair styles to be compiled with LAMMPS
+wt - input files for the S and ACE2 wild type model
+variant_1 - input files for the S ((+)S1S2) and ACE2 models
+variant_2 - input files for the S ((+)RBDACE2) and ACE2 models
+variant_3 - input files for the S ((+)S1S2RBDACE2) and ACE2 models
+variant_4 - input files for the S (E0.3c+0.7o) and ACE2 models
+variant_5 - input files for the S (E0.7c+0.3o) and ACE2 models
+cleavage_0 - input files for the S (0% cleaved) and ACE2 models
+cleavage_33 - input files for the S (33% cleaved) and ACE2 models
+cleavage_66 - input files for the S (66% cleaved) and ACE2 models
+

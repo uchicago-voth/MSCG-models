@@ -1,0 +1,40 @@
+variable TEMP           equal   310.0
+variable PRESS 		equal   0.0
+
+#variable SEED  		equal  	12392
+variable SEED2   	equal   $( v_SEED + 1099 )
+variable SEED3  	equal   $( v_SEED + 80192 ) 
+variable SEED4  	equal   $( v_SEED + 7102 )
+variable SEED5 		equal   $( v_SEED + 30192 )
+
+include "system.init"
+read_data eq${PID}.data
+include "system.settings"
+
+compute 1 all pair twogauss
+
+comm_modify mode multi cutoff/multi 1*132 75.0 cutoff/multi 133*209 70.0 cutoff/multi 210*212 40.0
+
+group S type <> 1 132
+group ACE type <> 133 209
+group LIP type 210 211 212
+group PROT type <> 1 209
+
+neigh_modify exclude molecule/intra PROT
+
+timestep  50.0
+
+fix 1  all   nve
+fix 2  all   langevin ${TEMP} ${TEMP} 50000.0 ${SEED3} zero yes
+fix b1 all   balance 25000 0.95 shift xyz 15 1.03 
+
+thermo 25000
+thermo_style  custom  step spcpu  temp  ke pe etotal  epair c_1 lx ly lz  pxx pyy pzz
+
+dump 1 PROT atom 25000 sub${CID}.lammpstrj
+dump_modify 1 sort id
+
+run 30000000
+
+write_dump all atom eq${CID}.lammpstrj
+write_data eq${CID}.data nocoeff

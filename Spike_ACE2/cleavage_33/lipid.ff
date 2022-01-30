@@ -1,0 +1,23 @@
+######### DEFINE FORCEFIELD VARIABLES HERE ###############
+variable Boltzmann    equal  1.3806e-23
+variable Avogadro     equal  6.0221e+23
+
+variable Temperature  equal  300.0
+variable kBT          equal  $( (v_Boltzmann * v_Temperature * v_Avogadro) / (4.184 * 1000.0) ) # in kcal/mol
+
+variable BEAD_SIZE    equal  12.0
+variable STICKYNESS   equal  5.0
+variable TAIL_BEADS   equal  3.0
+variable BEND 	      equal  5.0 
+
+variable R  equal $( v_BEAD_SIZE )
+variable RC equal $( 2.0 * v_R )
+variable A  equal $( (1.0/v_R) * (50.0*7.5)                  * v_kBT )
+variable B  equal $( (1.0/v_R) * (v_STICKYNESS/v_TAIL_BEADS) * v_kBT )
+
+variable R_HH equal $( 0.75 * v_R )
+variable A_HH equal $( (1.0/v_R_HH) * (20.0*7.5) * v_kBT )
+
+variable BOND_R equal $( 16.0 / v_TAIL_BEADS )
+variable BOND_K equal $( v_BEND * v_kBT )
+variable BEND_K equal $( v_BEND * v_kBT )

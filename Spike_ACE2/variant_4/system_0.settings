@@ -1,0 +1,12 @@
+# type 1-73 = S1
+# type 74-132 = S2
+# type 133-209 = ACE2
+# type 210-212 = JG lipid
+
+pair_coeff * * coul/debye
+
+include "exclusion.ff"
+include "bond.ff"
+include "gausswall.ff"
+include "lipid.ff"
+include "cross_interactions_0.ff"

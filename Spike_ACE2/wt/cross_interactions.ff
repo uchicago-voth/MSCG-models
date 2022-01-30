@@ -1,0 +1,65 @@
+
+   bond_coeff   1595        ${BOND_K}  ${BOND_R}
+   bond_coeff   1596        ${BOND_K}  ${BOND_R}
+
+   angle_coeff   1        ${BEND_K}  180.0
+   angle_coeff   2        ${BEND_K}  180.0
+
+   pair_coeff   210  210     john4    ${A_HH}    ${R_HH}   0.0   ${R_HH}
+   pair_coeff   210  211     john4    ${A}    ${R}   0.0   ${R}
+   pair_coeff   210  212     john4    ${A}    ${R}   0.0   ${R}
+   pair_coeff   211  211     john4    ${A}    ${R}   ${B}   ${RC}
+   pair_coeff   211  212     john4    ${A}    ${R}   0.0   ${R}
+   pair_coeff   212  212     john4    ${A}    ${R}   ${B}   ${RC}
+
+
+   ###### S/ACE2 
+   pair_coeff  1*132    133*209   soft    25.000 10.000  
+
+   pair_coeff 44 133 twogauss -1.8316 16.262720 0.475526 -0.0000 25.000000 5.000000 25.0000
+   pair_coeff 46 133 twogauss -1.5863 17.090264 0.398745 -0.0000 25.000000 5.000000 25.0000
+   pair_coeff 47 133 twogauss -3.1042 14.001389 0.586612 -0.0000 25.000000 5.000000 25.0000
+   pair_coeff 48 133 twogauss -1.6469 12.046970 0.362156 -0.0000 25.000000 5.000000 25.0000
+   pair_coeff 43 134 twogauss 0.2488 18.967510 0.935075 -0.0000 25.000000 5.000000 25.0000
+   pair_coeff 44 134 twogauss -1.2660 16.123462 0.474919 -0.0000 25.000000 5.000000 25.0000
+   pair_coeff 48 134 twogauss -1.2370 17.315291 0.657340 -0.0000 25.000000 5.000000 25.0000
+   pair_coeff 49 134 twogauss -1.7365 13.709072 0.504981 -0.0000 25.000000 5.000000 25.0000
+   pair_coeff 48 137 twogauss 0.1172 19.235470 0.271312 -1.2709 20.284636 0.977755 25.0000
+   pair_coeff 47 138 twogauss -2.2032 17.865268 0.908732 -0.0000 25.000000 5.000000 25.0000
+   pair_coeff 48 138 twogauss -1.9201 14.968479 0.620954 -0.0000 25.000000 5.000000 25.0000
+   pair_coeff 43 158 twogauss -1.2855 19.327988 0.793199 -0.0000 25.000000 5.000000 25.0000
+   pair_coeff 49 158 twogauss -0.6171 17.371663 0.550305 -0.0000 25.000000 5.000000 25.0000
+   pair_coeff 49 162 twogauss -1.4669 17.066918 0.352046 -0.0000 25.000000 5.000000 25.0000
+   pair_coeff 49 165 twogauss -2.0870 18.373875 0.595744 -0.0000 25.000000 5.000000 25.0000
+
+
+   ###### S/LIPID 
+   pair_coeff  1*115    210*212   soft    25.000 12.000
+   pair_coeff  121*132  210*212   soft    25.000 12.000
+
+   pair_coeff  116     210 	 john4 ${A_HH}    ${R_HH}   0.0   ${R_HH}
+   pair_coeff  116     211 	 john4 ${A}    ${R}   0.0   ${R}
+   pair_coeff  116     212 	 john4 ${A}    ${R}   0.0   ${R}
+   pair_coeff  117*119 210 	 john4 ${A}    ${R}   0.0   ${R}
+   pair_coeff  117*119 211 	 john4 ${A}    ${R}   ${B}   ${RC}
+   pair_coeff  117*119 212 	 john4 ${A}    ${R}   ${B}   ${RC}
+   pair_coeff  120     210 	 john4 ${A_HH}    ${R_HH}   0.0   ${R_HH}
+   pair_coeff  120     211 	 john4 ${A}    ${R}   0.0   ${R}
+   pair_coeff  120     212 	 john4 ${A}    ${R}   0.0   ${R}
+
+
+   ###### ACE2/LIPID
+   pair_coeff   133*197   210*212    soft    25.0000   12.0000
+   pair_coeff   203*209   210*212    soft    25.0000   12.0000
+
+   pair_coeff   198  210     john4    ${A_HH}    ${R_HH}   0.0   ${R_HH}
+   pair_coeff   198  211     john4    ${A}    ${R}   0.0   ${R}
+   pair_coeff   198  212     john4    ${A}    ${R}   0.0   ${R}
+
+   pair_coeff   199*201  210     john4    ${A}    ${R}   0.0   ${R}
+   pair_coeff   199*201  211     john4    ${A}    ${R}   ${B}   ${RC}
+   pair_coeff   199*201  212     john4    ${A}    ${R}   ${B}   ${RC}
+
+   pair_coeff   202  210     john4    ${A_HH}    ${R_HH}   0.0   ${R_HH}
+   pair_coeff   202  211     john4    ${A}    ${R}   0.0   ${R}
+   pair_coeff   202  212     john4    ${A}    ${R}   0.0   ${R}
