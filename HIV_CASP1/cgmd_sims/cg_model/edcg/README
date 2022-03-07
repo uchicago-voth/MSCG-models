@@ -1,0 +1,2 @@
+run_EDCG.bash - generate mapping using EDCG
+prep_map_in.bash - convert mapping information to parsable text file

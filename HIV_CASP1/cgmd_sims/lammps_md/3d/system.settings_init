@@ -1,0 +1,14 @@
+# atom types 1-35 are real
+# atom types 36-70 are offstate
+# atom type 71 is RNA
+# atom type 72 is IP6
+
+  pair_coeff  *  *  coul/debye
+
+  pair_coeff 1*70  1*70   soft  25.000  8.000
+
+include "exclusion_withcoul.ff"
+include "bond.ff"
+include "gausswall.ff_init"
+include "gaussoff.ff"
+include "cross_interactions.ff_init"

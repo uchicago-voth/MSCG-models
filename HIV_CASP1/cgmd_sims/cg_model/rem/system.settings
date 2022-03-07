@@ -1,0 +1,11 @@
+# atom types 1-35 are CASP1
+# atom type 36 is IP6
+
+  pair_coeff  *  *  coul/debye
+
+  pair_coeff 1*35  36  soft  25.000  10.000
+  pair_coeff 36    36  soft  25.000  15.00
+
+include "exclusion.ff"
+include "bond.ff"
+include "gausswall.ff"

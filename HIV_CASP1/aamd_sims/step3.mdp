@@ -1,0 +1,57 @@
+title	       =  HIV-1 Gag hexamer NVT equilibration
+
+; Run parameters
+integrator     =  md	     	    ; Algorithm (leap frog integrator)
+nsteps	       =  10000000  	    ; Maximum number of steps to perform
+dt  	       =  0.002  	    ; 2 fs
+
+; Output control
+nstxout	       =  5000000              ; save coordinates
+nstvout	       =  5000000              ; save velocities
+nstfout	       =  5000000              ; save forces
+nstenergy      =  10000              ; save energy
+nstlog	       =  10000              ; save log
+nstxout-compressed = 10000   	     
+compressed-x-grps = Protein
+
+; Bond parameters
+constraints    =  h-bonds
+constraint_algorithm = lincs
+continuation   =  yes
+lincs_iter     =  1
+lincs_order    =  4 
+
+; Neighbor settings and long range parameters
+nstlist	       =  25	    	    ; Frequency to update the neighbor list and long range forces
+cutoff-scheme  =  Verlet
+ns_type	       =  grid		    ; Method to determine neighbor list (simple, grid)
+
+coulombtype    =  PME		    ; Treatment of long range electrostatic interactions
+rcoulomb       =  1.2	    	    ; Short-range electrostatic cut-off
+
+vdwtype        =  cutoff  	    ; Short-range vdW cutoff type with switching function
+vdw-modifier   =  force-switch 
+rvdw	       =  1.2     	    ; 1.2 nm
+rlist  	       =  1.2  		    ; 1.2 nm
+rvdw-switch    =  1.0		    ; inner/outer switch (1.0 nm)
+
+DispCorr       =  no
+pbc	       =  xyz 	    	    ; Periodic Boundary Conditions (yes/no)
+
+; Temperature control
+tcoupl         =  Nose-Hoover	    ; NH thermostat
+tc-grps        =  Protein Non-Protein 
+tau_t 	       =  2.0      2.0
+ref_t	       =  310      310
+
+; Pressure control
+pcoupl         =  Parrinello-Rahman    ; modified NPT using box vector DOF
+pcoupltype     =  isotropic   	       ; uniform scaling
+tau_p 	       =  10.0 		       ; relaxation time constant
+ref_p 	       =  1.0 		       ; reference pressure (bar)
+compressibility = 4.5e-5  	       ; isothermal compressibility of water bar^-1
+refcoord_scaling = com
+
+; Velocity generation
+gen_vel	       =  no		    ; Use loaded state points
+

@@ -1,0 +1,3 @@
+The base files here represents the 150mM salt + ip6 condition
+Note that ip6 is added to the simulation by LAMMPS (remove to simulate non-ip6 condition)
+To simulate 400mM, change the debye screening constant to 0.2083

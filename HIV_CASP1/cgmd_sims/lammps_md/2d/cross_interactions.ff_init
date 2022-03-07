@@ -1,0 +1,65 @@
+   # GAG-IP6
+   pair_coeff 23 78  gauss/wall  0.0 14.916701 0.895264 25.000
+   pair_coeff 32 78  gauss/wall  0.0 11.393830 0.553820 25.000
+
+   pair_coeff 58 78  gauss/cut  50.000   0.0000   7.85   25.000
+   pair_coeff 67 78  gauss/cut  50.000   0.0000   7.85   25.000
+
+   pair_coeff  1*77  78   soft   25.0    8.0
+   pair_coeff  78    78   soft   25.0   15.0
+
+   # RNA ball
+   bond_coeff   131    2.5000    6.8
+   angle_coeff  1      1.0       145.0
+   pair_coeff   71 71  soft      20.0     11.5
+
+   # MEM, 36/39 are top beads, 38/41 are bot beads
+   # MEM, 72/75 are top beads, 74/77 are bot beads
+   pair_coeff   72*77  72*77   john4 ${A}    ${R}   0.0   ${R}
+
+   pair_coeff   72  72         john4 ${A_HH}    ${R_HH}   0.0   ${R_HH}
+   pair_coeff   72  73         john4 ${A}    ${R}   0.0   ${R}
+   pair_coeff   72  74         john4 ${A}    ${R}   0.0   ${R}
+
+   pair_coeff   75  75         john4 ${A_HH}    ${R_HH}   0.0   ${R_HH}
+   pair_coeff   75  76         john4 ${A}    ${R}   0.0   ${R}
+   pair_coeff   75  77         john4 ${A}    ${R}   0.0   ${R}
+
+   pair_coeff   72  75         john4 ${A_HH}    ${R_HH}   0.0   ${R_HH}
+   pair_coeff   72  76         john4 ${A}    ${R}   0.0   ${R}
+   pair_coeff   72  77         john4 ${A}    ${R}   0.0   ${R}
+
+   pair_coeff   73  73         john4 ${A}    ${R}   ${B}   ${RC}
+   pair_coeff   73  74         john4 ${A}    ${R}   0.0    ${R}
+
+   pair_coeff   76  76         john4 ${A}    ${R}   ${B}   ${RC}
+   pair_coeff   76  77         john4 ${A}    ${R}   0.0    ${R}
+
+   pair_coeff   73  76         john4 ${A}    ${R}   ${B}   ${RC}
+   pair_coeff   73  77         john4 ${A}    ${R}   0.0    ${R}
+
+   pair_coeff   74  74         john4 ${A}    ${R}   ${B}   ${RC}
+   pair_coeff   77  77         john4 ${A}    ${R}   ${B}   ${RC}
+   pair_coeff   74  77         john4 ${A}    ${R}   ${BX}  ${RC}
+
+   bond_coeff   132        ${BOND_K}  ${BOND_R}
+   bond_coeff   133        ${BOND_K}  ${BOND_R}
+
+   bond_coeff   134        ${BOND_K}  ${BOND_R}
+   bond_coeff   135        ${BOND_K}  ${BOND_R}
+
+   angle_coeff   2        ${BEND_K1}  180.0
+   angle_coeff   3        ${BEND_K1}  180.0
+
+   angle_coeff   4        ${BEND_K2}  180.0
+   angle_coeff   5        ${BEND_K2}  180.0
+
+   # GAG-MEM interactions
+   pair_coeff  11*13   72    lj/cut/soft    2.75   15.0    0.6    #binds to head group
+   pair_coeff  11*13   75    lj/cut/soft    2.75   15.0    0.6    #binds to head group
+   pair_coeff  46*48   72    lj/cut/soft    2.75   15.0    0.6    #binds to head group
+   pair_coeff  46*48   75    lj/cut/soft    2.75   15.0    0.6    #binds to head group
+
+   # GAG-RNA interactions
+   pair_coeff  35   71	     lj/cut/soft    1.82   16.0    0.5      
+   pair_coeff  70   71	     lj/cut/soft    0.91   16.0    0.5      

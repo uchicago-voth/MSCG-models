@@ -1,0 +1,17 @@
+# atom types 1-35 are real
+# 36-70 are virtual
+# 71 RNA
+# 72-74, 75-77 lipids
+# 78 ip6
+
+   pair_coeff  *  *  coul/debye
+   
+   pair_coeff  *  1*70    soft    25.0000      8.0000
+   pair_coeff 1*70 71*77  soft 	  25.0000      12.0000
+   pair_coeff 71*77 71*77 soft 	  25.0000      12.0000
+
+include "exclusion.ff"
+include "bond.ff"
+include "gausswall.ff_init"
+include "gaussoff.ff"
+include "cross_interactions.ff_init"

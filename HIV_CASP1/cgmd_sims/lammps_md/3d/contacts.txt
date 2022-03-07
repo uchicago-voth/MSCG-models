@@ -1,0 +1,4 @@
+numInterfaces 1
+nAtomsPerInterface 2
+26 26
+32 32

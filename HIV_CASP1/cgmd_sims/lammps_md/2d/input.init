@@ -1,0 +1,61 @@
+variable TEMP           equal   310.0
+variable PRESS 		equal   0.0
+
+variable SEED2   	equal   $( v_SEED + 1099 )
+variable SEED3  	equal   $( v_SEED + 80192 ) 
+variable SEED4  	equal   $( v_SEED + 7102 )
+variable SEED5 		equal   $( v_SEED + 30192 )
+
+include "lipid.ff"
+include "system.init"
+
+read_data "Gag.data" extra/atom/types 8 extra/bond/types 5 extra/angle/types 5 extra/angle/per/atom 3
+read_data "rna.data" add 143360 4096 offset 70 130 0 0 0
+read_data "Lipid.data" add 152360 4097 offset 71 131 1 0 0
+
+mass 78 660.0
+
+include "system.settings_init"
+
+group GAG type <= 70
+group RNA type 71
+group MEM type <> 72 77
+group SUB type 26 31 61 66 72 75 
+
+displace_atoms MEM move 0.0 0.0 -70.0
+displace_atoms GAG move 0.0 0.0 1000.0
+displace_atoms RNA move 1250.0 1000.0 770.0
+
+neigh_modify exclude molecule/intra GAG
+
+# add 4096 IP6
+# from z = 750 to 1300
+region ipbox block EDGE EDGE EDGE EDGE 750.0 1300.0
+create_atoms 78 random 4096 ${SEED} ipbox
+group IP6 type 78
+set type 78 charge -6.0
+
+thermo 50
+minimize 1e-4 1e-6 10000 100000
+velocity all create ${TEMP} ${SEED} mom yes rot yes dist gaussian
+
+timestep  50.0 
+reset_timestep 0
+
+dump 1 all all 250000 dump0.lammpstrj
+dump_modify 1 sort id
+
+thermo 1000
+thermo_style  custom  step spcpu  temp  ke pe etotal  epair lx ly lz  pxx pyy pzz
+
+fix 1  all    press/berendsen x ${PRESS} ${PRESS} 10000.0 y ${PRESS} ${PRESS} 10000.0 couple xy
+fix 2  GAG    langevin ${TEMP} ${TEMP} 5000.0 ${SEED2} zero yes
+fix 3  RNA    langevin ${TEMP} ${TEMP} 5000.0 ${SEED3} zero yes
+fix 4  MEM    langevin ${TEMP} ${TEMP} 5000.0 ${SEED4} zero yes
+fix 5  IP6    langevin ${TEMP} ${TEMP} 5000.0 ${SEED} zero yes
+
+run 5000000
+
+write_dump all atom eq0.lammpstrj
+write_data eq0.data nocoeff
+write_restart eq0.restart

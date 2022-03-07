@@ -1,0 +1,71 @@
+#settings for local system. Modify as you need.
+
+#install prefix
+#prefix = /usr/local/bin
+#mpif90 = /opt/mpich/bin/mpif90
+
+#### USER EDITED SECTION ############################
+
+#Should be compiler portable.
+f90    = gfortran
+
+#source directory
+#build directory
+builddir       = build
+
+#sub directory for compiled modules
+modulebuilddir = $(builddir)/module
+
+#sub directory for compiled modules
+objectbuilddir = $(builddir)/object
+
+#### END USER EDITED SECTION ########################
+
+srcdir         = src
+
+#compilation flags. The default should function fine if not debugging and using gfortran with non-MKL lapack and blas.
+
+#standard optimized run with safety checks, gfortran.
+flags          =  -fdiagnostics-color=auto -march=native -ftree-vectorize -O3 -fopenmp -ffree-line-length-none -Wextra -Wall -Wimplicit-procedure -Wno-compare-reals -Wno-surprising -Wno-implicit-interface -pedantic -llapack -lblas  -fcheck=all -std=f2008 -nocpp -fcoarray=single
+
+#standard optimized run with sanity checks. gfortran, MKL.
+#flags          =  -fdiagnostics-color=auto -march=native -ftree-vectorize -O3 -g -fopenmp -ffree-line-length-none -Wextra -Wall -Wimplicit-interface -Wimplicit-procedure -Wno-surprising -lpthread -lmkl_core -lmkl_intel_lp64 -lmkl_sequential -pedantic -std=f2008 -fcheck=all -nocpp -fcoarray=single
+
+#standard debug. gfortran. -Og causes problems.
+#flags          =  -g -O0 -ffree-line-length-none -fopenmp -llapack -lblas  -fcheck=all -std=f2008 -fbacktrace
+
+#possible flags for ifort.
+#flags          =  -O3 -llapack -lblas -warn all -openmp -xHost -standard-semantics -unroll -ipo
+
+#grab makefile residing directory
+mkfile_path   := $(abspath $(lastword $(MAKEFILE_LIST)))
+#where are lapack libs
+lapacklib      = /usr/lib
+
+locationFlags  = -L$(lapacklib) -I$(modulebuilddir) -J$(modulebuilddir)
+
+_objectfiles   = env_kindtypes.o   core_multipole.o   core_convert.o   core_matrix.o   core_sort.o   core_graph.o   core_random.o   core_stat.o   obj_ll.o   obj_accum.o   abs_obj_logger.o   obj_stopwatch.o   env_endianess.o   io_csv.o   routines_trajectory.o   io_xyz.o   io_psf.o   routines_math.o   core_kmeans.o   core_filter.o   io_dcd.o   obj_trajectory.o   fit_charge.o   fit_edcg.o   fit_common.o   abs_obj_model.o   routines_modelSolve.o   obj_rlogger.o   routines_boundaryStepwiseOptimization.o   routines_spectralOptimization.o   routines_centroidStepwiseOptimization.o   obj_linear_model.o   obj_centroid_model.o   obj_spectral_model.o   routines_bootstrap.o   routines_modelDesign.o   routines_multipoleAnalysis.o   obj_commandLine.o
+objectfiles    = $(patsubst %,$(objectbuilddir)/%,$(_objectfiles))
+
+exec           = $(builddir)/cgmgc
+secexec        = $(builddir)/mapstack
+
+_execobj       = main.o
+_secexecobj    = mapstack.o
+execobj        = $(patsubst %,$(objectbuilddir)/%,$(_execobj))
+secexecobj     = $(patsubst %,$(objectbuilddir)/%,$(_secexecobj))
+
+$(objectbuilddir)/%.o: $(srcdir)/%.f90
+	$(f90) -c $< $(flags) $(locationFlags) -o $@
+
+all : $(exec) $(secexec)
+
+$(exec): $(objectfiles) $(execobj)
+	$(f90) -o $(exec) $(flags) $(locationFlags) $(objectfiles) $(execobj)
+
+$(secexec): $(objectfiles) $(secexecobj)
+	$(f90) -o $(secexec) $(flags) $(locationFlags) $(objectfiles) $(secexecobj)
+
+clean :
+	rm -f $(exec) $(secexec) $(objectbuilddir)/*.o $(modulebuilddir)/*.mod
+

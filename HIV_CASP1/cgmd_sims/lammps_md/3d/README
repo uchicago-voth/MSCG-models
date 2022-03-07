@@ -1,0 +1,4 @@
+These are the base files used to start the 3D assembly simulations - they represent 150mM salt + ip6
+
+To simulate the Gag-only condition, IP6 should be deleted (uncomment the line in the input file)
+To simulate the 400mM condition, the coul/debye screening constant should also be set to 0.2083

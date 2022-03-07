@@ -1,0 +1,21 @@
+# This bash script generates ba.dat file to be used for construction
+# of heteroENM model with all CA atoms. Usage:
+# ./generate_ba_allCA.ssh $natoms
+# where $natoms is the number of CA atoms in your system.
+# AVS, Aug 2011
+
+if [ $# -ne 1 ]
+then
+  echo "Usage: ./generate_ba_allCA.ssh \$natoms"
+  exit
+fi
+
+natoms=$1
+if [ -e ba.dat ]
+then
+  rm ba.dat
+fi
+for (( i=1; i<=$natoms; i++ ))
+do
+  echo $i >> ba.dat
+done

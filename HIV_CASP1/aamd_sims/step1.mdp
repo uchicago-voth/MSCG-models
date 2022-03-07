@@ -1,0 +1,51 @@
+title	       =  HIV-1 Gag hexamer NVT equilibration
+define 	       =  -DPOSRES  	    ; position restrain the protein
+
+; Run parameters
+integrator     =  md	     	    ; Algorithm (leap frog integrator)
+nsteps	       =  5000000  	    ; Maximum number of steps to perform
+dt  	       =  0.002  	    ; 2 fs
+
+; Output control
+nstxout	       =  25000              ; save coordinates
+nstvout	       =  25000              ; save velocities
+nstenergy      =  25000              ; save energy
+nstlog	       =  25000              ; save log
+
+; Bond parameters
+constraints    =  h-bonds
+constraint_algorithm = lincs
+continuation   =  no
+lincs_iter     =  1
+lincs_order    =  4 
+
+; Neighbor settings and long range parameters
+nstlist	       =  25	    	    ; Frequency to update the neighbor list and long range forces
+cutoff-scheme  =  Verlet
+ns_type	       =  grid		    ; Method to determine neighbor list (simple, grid)
+
+coulombtype    =  PME		    ; Treatment of long range electrostatic interactions
+rcoulomb       =  1.2	    	    ; Short-range electrostatic cut-off
+
+vdwtype        =  cutoff  	    ; Short-range vdW cutoff type with switching function
+vdw-modifier   =  force-switch 
+rvdw	       =  1.2     	    ; 1.2 nm
+rlist  	       =  1.2  		    ; 1.2 nm
+rvdw-switch    =  1.0		    ; inner/outer switch (1.0 nm)
+
+DispCorr       =  no
+pbc	       =  xyz 	    	    ; Periodic Boundary Conditions (yes/no)
+
+; Temperature control
+tcoupl         =  V-rescale	    ; stochastic V-rescale
+tc-grps        =  Protein Non-Protein 
+tau_t 	       =  0.1      0.1
+ref_t	       =  310      310
+
+; Pressure control
+pcoupl         =  no
+
+; Velocity generation
+gen_vel	       =  yes		    ; Maxwell distribution of vel
+gen_temp       =  310
+gen_seed       =  330912

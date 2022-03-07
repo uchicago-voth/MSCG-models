@@ -1,0 +1,19 @@
+   # GAG-RNA
+   bond_coeff   131    2.5000   6.8
+   angle_coeff   1     1.0  	145.0
+
+   pair_coeff   1*70 71  	soft	20.0	16.5
+   pair_coeff    71 71          soft    20.0    16.5
+
+   pair_coeff    35 71 	  lj/cut/soft  1.82   16.0   0.5  
+   pair_coeff    70 71 	  lj/cut/soft  0.91   16.0   0.5  
+
+   # GAG-IP6
+   pair_coeff 23 72  gauss/wall  0.0 14.916701 0.895264 25.000
+   pair_coeff 32 72  gauss/wall  0.0 11.393830 0.553820 25.000
+
+   pair_coeff 58 72  gauss/cut  50.000   0.0000   7.85   25.000
+   pair_coeff 67 72  gauss/cut  50.000   0.0000   7.85   25.000
+
+   pair_coeff  1*71  72   soft   25.0    8.0
+   pair_coeff  72    72   soft   25.0   15.0
