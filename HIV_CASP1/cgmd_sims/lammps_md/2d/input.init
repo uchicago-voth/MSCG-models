@@ -28,6 +28,27 @@ displace_atoms RNA move 1250.0 1000.0 770.0
 
 neigh_modify exclude molecule/intra GAG
 
+# set charges
+set type 1 charge 1
+set type 2 charge -1
+set type 4 charge -1
+set type 5 charge -1
+set type 8 charge -1
+set type 9 charge -2
+set type 14 charge 1
+set type 15 charge -1
+set type 17 charge -1
+set type 19 charge 1
+set type 20 charge 1
+set type 21 charge 1
+set type 24 charge 1
+set type 26 charge -1
+set type 28 charge 1
+set type 30 charge -2
+set type 32 charge 1
+set type 33 charge 1
+set type 34 charge -1
+
 # add 4096 IP6
 # from z = 750 to 1300
 region ipbox block EDGE EDGE EDGE EDGE 750.0 1300.0
