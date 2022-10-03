@@ -1,0 +1,994 @@
+
+# atom type 139 = CRO 
+
+   pair_coeff   1*130   1*130      soft    10.0000      10.0000
+   pair_coeff   1*138  131*138     soft     0.0000      10.0000
+   pair_coeff   1*138  139         soft    10.0000	12.0000
+   pair_coeff   139    139         soft    10.0000	14.0000		
+   pair_coeff   1*139    140       soft    10.0000      10.0000
+   pair_coeff   140    140         soft    20.0000      25.0000
+   pair_coeff 2 140  gauss/wall  -2.8 8.3 0.4 25.000
+
+   pair_coeff   1  2    soft    10.0000       6.6730   
+   pair_coeff   1  3    soft    10.0000       6.0740   
+   pair_coeff   1  4    soft    10.0000       9.6300   
+   pair_coeff   1  5    soft    10.0000       9.3970   
+   pair_coeff   1  6    soft    10.0000       6.7190   
+   pair_coeff   1  7    soft    10.0000       9.0020   
+   pair_coeff   1  18    soft    10.0000       9.0920   
+   pair_coeff   1  21    soft    10.0000       8.2060   
+   pair_coeff   1  22    soft    10.0000       6.6100   
+   pair_coeff   2  2    soft    10.0000       8.1850   
+   pair_coeff   2  3    soft    10.0000       9.1020   
+   pair_coeff   2  6    soft    10.0000       9.0130   
+   pair_coeff   4  6    soft    10.0000       9.4380   
+   pair_coeff   4  18    soft    10.0000       7.7300   
+   pair_coeff   4  21    soft    10.0000       8.1840   
+   pair_coeff   4  22    soft    10.0000       8.5510   
+   pair_coeff   5  6    soft    10.0000       8.1720   
+   pair_coeff   5  10    soft    10.0000       9.7360   
+   pair_coeff   5  18    soft    10.0000       9.3390   
+   pair_coeff   15  31    soft    10.0000       8.8930   
+   pair_coeff   15  32    soft    10.0000       6.7430   
+   pair_coeff   16  28    soft    10.0000       9.5930   
+   pair_coeff   16  31    soft    10.0000       8.6690   
+   pair_coeff   16  32    soft    10.0000       7.8190   
+   pair_coeff   17  27    soft    10.0000       8.5610   
+   pair_coeff   17  28    soft    10.0000       5.7890   
+   pair_coeff   17  29    soft    10.0000       8.2470   
+   pair_coeff   17  30    soft    10.0000       9.0910   
+   pair_coeff   17  31    soft    10.0000       5.9990   
+   pair_coeff   17  32    soft    10.0000       5.6190   
+   pair_coeff   18  28    soft    10.0000       7.2380   
+   pair_coeff   18  29    soft    10.0000       8.6030   
+   pair_coeff   18  31    soft    10.0000       8.0490   
+   pair_coeff   18  32    soft    10.0000       5.7180   
+   pair_coeff   19  28    soft    10.0000       9.9870   
+   pair_coeff   19  32    soft    10.0000       9.3640   
+   pair_coeff   20  28    soft    10.0000       8.3900   
+   pair_coeff   21  24    soft    10.0000       9.7660   
+   pair_coeff   21  25    soft    10.0000       8.4200   
+   pair_coeff   21  28    soft    10.0000       6.9180   
+   pair_coeff   21  29    soft    10.0000       9.1610   
+   pair_coeff   21  32    soft    10.0000       9.2380   
+   pair_coeff   31  100    soft    10.0000       8.7800   
+   pair_coeff   33  89    soft    10.0000       7.5250   
+   pair_coeff   33  90    soft    10.0000       7.0770   
+   pair_coeff   33  91    soft    10.0000       8.6550   
+   pair_coeff   33  92    soft    10.0000       6.8130   
+   pair_coeff   33  93    soft    10.0000       3.3930   
+   pair_coeff   33  94    soft    10.0000       5.9740   
+   pair_coeff   33  95    soft    10.0000       7.3120   
+   pair_coeff   33  96    soft    10.0000       4.4830   
+   pair_coeff   33  97    soft    10.0000       4.6520   
+   pair_coeff   33  98    soft    10.0000       8.2960   
+   pair_coeff   33  99    soft    10.0000       8.6550   
+   pair_coeff   33  100    soft    10.0000       7.7450   
+   pair_coeff   34  88    soft    10.0000       8.2270   
+   pair_coeff   34  89    soft    10.0000       4.7800   
+   pair_coeff   34  90    soft    10.0000       5.8590   
+   pair_coeff   34  91    soft    10.0000       7.4520   
+   pair_coeff   34  92    soft    10.0000       4.8890   
+   pair_coeff   34  93    soft    10.0000       2.8780   
+   pair_coeff   34  94    soft    10.0000       6.5860   
+   pair_coeff   34  95    soft    10.0000       7.6520   
+   pair_coeff   34  96    soft    10.0000       5.8450   
+   pair_coeff   34  97    soft    10.0000       7.4780   
+   pair_coeff   34  124    soft    10.0000       7.5420   
+   pair_coeff   34  125    soft    10.0000       7.6530   
+   pair_coeff   34  127    soft    10.0000       9.6340   
+   pair_coeff   34  128    soft    10.0000       6.6510   
+   pair_coeff   34  129    soft    10.0000       8.5830   
+   pair_coeff   35  89    soft    10.0000       7.4970   
+   pair_coeff   35  90    soft    10.0000       8.9510   
+   pair_coeff   35  92    soft    10.0000       8.6030   
+   pair_coeff   35  93    soft    10.0000       6.5590   
+   pair_coeff   35  96    soft    10.0000       8.9190   
+   pair_coeff   35  97    soft    10.0000       9.9450   
+   pair_coeff   35  124    soft    10.0000       9.0160   
+   pair_coeff   35  125    soft    10.0000       7.8000   
+   pair_coeff   35  128    soft    10.0000       8.3790   
+   pair_coeff   35  129    soft    10.0000       9.1710   
+   pair_coeff   36  92    soft    10.0000       9.8620   
+   pair_coeff   36  93    soft    10.0000       7.3960   
+   pair_coeff   36  96    soft    10.0000       7.8430   
+   pair_coeff   36  97    soft    10.0000       8.7520   
+   pair_coeff   36  100    soft    10.0000       9.9540   
+   pair_coeff   36  125    soft    10.0000       9.7050   
+   pair_coeff   37  89    soft    10.0000       8.9390   
+   pair_coeff   37  92    soft    10.0000       7.8850   
+   pair_coeff   37  93    soft    10.0000       6.5490   
+   pair_coeff   37  94    soft    10.0000       9.6570   
+   pair_coeff   37  95    soft    10.0000       9.6090   
+   pair_coeff   37  96    soft    10.0000       6.5160   
+   pair_coeff   37  97    soft    10.0000       8.4050   
+   pair_coeff   37  100    soft    10.0000       9.7910   
+   pair_coeff   37  124    soft    10.0000       6.7740   
+   pair_coeff   37  125    soft    10.0000       7.3510   
+   pair_coeff   37  128    soft    10.0000       9.0070   
+   pair_coeff   38  89    soft    10.0000       9.3540   
+   pair_coeff   38  92    soft    10.0000       9.0330   
+   pair_coeff   38  93    soft    10.0000       8.6050   
+   pair_coeff   38  96    soft    10.0000       9.7560   
+   pair_coeff   38  124    soft    10.0000       5.7680   
+   pair_coeff   38  125    soft    10.0000       4.7570   
+   pair_coeff   38  126    soft    10.0000       8.5230   
+   pair_coeff   38  127    soft    10.0000       9.5620   
+   pair_coeff   38  128    soft    10.0000       8.1300   
+   pair_coeff   38  129    soft    10.0000       8.8290   
+   pair_coeff   39  124    soft    10.0000       9.3250   
+   pair_coeff   39  125    soft    10.0000       8.2840   
+   pair_coeff   40  124    soft    10.0000       9.2210   
+   pair_coeff   40  125    soft    10.0000       9.3120   
+   pair_coeff   41  124    soft    10.0000       7.2300   
+   pair_coeff   41  125    soft    10.0000       6.9580   
+   pair_coeff   41  126    soft    10.0000       9.9630   
+   pair_coeff   42  124    soft    10.0000       9.5890   
+   pair_coeff   42  125    soft    10.0000       7.8390   
+   pair_coeff   78  125    soft    10.0000       9.7800   
+   pair_coeff   81  125    soft    10.0000       8.7830   
+   pair_coeff   81  129    soft    10.0000       9.2240   
+   pair_coeff   82  125    soft    10.0000       8.4940   
+   pair_coeff   82  129    soft    10.0000       8.4380   
+   pair_coeff   84  129    soft    10.0000       9.5020   
+   pair_coeff   85  89    soft    10.0000       9.8420   
+   pair_coeff   85  125    soft    10.0000       8.6630   
+   pair_coeff   85  126    soft    10.0000       9.8100   
+   pair_coeff   85  128    soft    10.0000       8.8650   
+   pair_coeff   85  129    soft    10.0000       5.8540   
+   pair_coeff   85  130    soft    10.0000       8.6700   
+   pair_coeff   86  89    soft    10.0000       9.7480   
+   pair_coeff   86  128    soft    10.0000       9.8880   
+   pair_coeff   86  129    soft    10.0000       7.6720   
+   pair_coeff   87  129    soft    10.0000       8.4500   
+   pair_coeff   102  102    soft    10.0000       6.0480   
+   pair_coeff   102  103    soft    10.0000       6.2090   
+   pair_coeff   102  104    soft    10.0000       9.7670   
+   pair_coeff   102  106    soft    10.0000       9.9990   
+   pair_coeff   103  103    soft    10.0000       4.5300   
+   pair_coeff   103  104    soft    10.0000       8.1990   
+   pair_coeff   103  105    soft    10.0000       9.5780   
+   pair_coeff   103  106    soft    10.0000       7.7910   
+   pair_coeff   103  107    soft    10.0000       8.0620   
+   pair_coeff   107  107    soft    10.0000       9.4670   
+   pair_coeff   119  120    soft    10.0000       8.4830   
+   pair_coeff   119  123    soft    10.0000       9.0900   
+   pair_coeff   119  130    soft    10.0000       8.6460   
+   pair_coeff   120  120    soft    10.0000       8.3320   
+   pair_coeff   120  122    soft    10.0000       8.7960   
+   pair_coeff   120  123    soft    10.0000       5.8940   
+   pair_coeff   121  122    soft    10.0000       9.9890   
+   pair_coeff   121  123    soft    10.0000       7.2320   
+   pair_coeff   121  130    soft    10.0000       9.9320   
+   pair_coeff   122  123    soft    10.0000       8.4920   
+   pair_coeff   122  129    soft    10.0000       9.4320   
+   pair_coeff   122  130    soft    10.0000       6.1650   
+   pair_coeff   123  123    soft    10.0000       5.4710   
+   pair_coeff   123  126    soft    10.0000       9.9600   
+   pair_coeff   123  127    soft    10.0000       9.7510   
+   pair_coeff   123  130    soft    10.0000       6.9920   
+
+   pair_coeff   25   131    srlr_gauss     2.0000       0.0100      1.1000       0.1000      30.0000   
+   pair_coeff   31   132    srlr_gauss     2.0000       0.0100      1.1000       0.1000      30.0000   
+   pair_coeff   33   133    srlr_gauss     2.0000       0.0100      1.1000       0.1000      30.0000   
+   pair_coeff   123  134    srlr_gauss     2.0000       0.0100      1.1000       0.1000      30.0000  
+   pair_coeff   25   135    srlr_gauss     0.0000       0.0100      0.0000       0.1000      30.0000   
+   pair_coeff   31   136    srlr_gauss     0.0000       0.0100      0.0000       0.1000      30.0000   
+   pair_coeff   33   137    srlr_gauss     0.0000       0.0100      0.0000       0.1000      30.0000   
+   pair_coeff   123  138    srlr_gauss     0.0000       0.0100      0.0000       0.1000      30.0000  
+
+   bond_coeff   1    10.0000   3.8080
+   bond_coeff   2    10.0000   5.5350
+   bond_coeff   3    10.0000   5.1060
+   bond_coeff   4    10.0000   6.0360
+   bond_coeff   5    10.0000   3.7910
+   bond_coeff   6    10.0000   5.5390
+   bond_coeff   7    10.0000   5.3180
+   bond_coeff   8    10.0000   6.0220
+   bond_coeff   9    10.0000   3.8150
+   bond_coeff   10    10.0000   5.4780
+   bond_coeff   11    10.0000   5.1960
+   bond_coeff   12    10.0000   6.2660
+   bond_coeff   13    10.0000   3.7860
+   bond_coeff   14    10.0000   5.6890
+   bond_coeff   15    10.0000   5.5750
+   bond_coeff   16    10.0000   6.4140
+   bond_coeff   17    10.0000   3.7970
+   bond_coeff   18    10.0000   5.4040
+   bond_coeff   19    10.0000   5.1450
+   bond_coeff   20    10.0000   6.0870
+   bond_coeff   21    10.0000   3.7820
+   bond_coeff   22    10.0000   5.6010
+   bond_coeff   23    10.0000   5.2550
+   bond_coeff   24    10.0000   6.1640
+   bond_coeff   25    10.0000   3.8010
+   bond_coeff   26    10.0000   5.4280
+   bond_coeff   27    10.0000   5.1820
+   bond_coeff   28    10.0000   6.5100
+   bond_coeff   29    10.0000   3.8390
+   bond_coeff   30    10.0000   5.5860
+   bond_coeff   31    10.0000   5.4640
+   bond_coeff   32    10.0000   6.3680
+   bond_coeff   33    10.0000   3.7890
+   bond_coeff   34    10.0000   5.3890
+   bond_coeff   35    10.0000   4.9630
+   bond_coeff   36    10.0000   5.9890
+   bond_coeff   37    10.0000   3.7970
+   bond_coeff   38    10.0000   5.4830
+   bond_coeff   39    10.0000   5.1970
+   bond_coeff   40    10.0000   5.7240
+   bond_coeff   41    10.0000   3.8010
+   bond_coeff   42    10.0000   5.4580
+   bond_coeff   43    10.0000   5.4520
+   bond_coeff   44    10.0000   3.7820
+   bond_coeff   45    10.0000   6.0410
+   bond_coeff   46    10.0000   3.7880
+   bond_coeff   47    10.0000   3.8160
+   bond_coeff   48    10.0000   5.8290
+   bond_coeff   49    10.0000   5.0540
+   bond_coeff   50    10.0000   6.1500
+   bond_coeff   51    10.0000   3.8260
+   bond_coeff   52    10.0000   5.1070
+   bond_coeff   53    10.0000   4.9270
+   bond_coeff   54    10.0000   6.1860
+   bond_coeff   55    10.0000   3.8150
+   bond_coeff   56    10.0000   5.5110
+   bond_coeff   57    10.0000   5.1040
+   bond_coeff   58    10.0000   6.2840
+   bond_coeff   59    10.0000   3.7930
+   bond_coeff   60    10.0000   5.4190
+   bond_coeff   61    10.0000   5.2220
+   bond_coeff   62    10.0000   6.1240
+   bond_coeff   63    10.0000   3.8020
+   bond_coeff   64    10.0000   5.4430
+   bond_coeff   65    10.0000   5.2060
+   bond_coeff   66    10.0000   3.7860
+   bond_coeff   67    10.0000   5.7160
+   bond_coeff   68    10.0000   3.8230
+   bond_coeff   69    10.0000   3.7780
+   bond_coeff   70    10.0000   5.4330
+   bond_coeff   71    10.0000   5.0010
+   bond_coeff   72    10.0000   6.2700
+   bond_coeff   73    10.0000   3.8400
+   bond_coeff   74    10.0000   5.4410
+   bond_coeff   75    10.0000   5.2620
+   bond_coeff   76    10.0000   6.3010
+   bond_coeff   77    10.0000   3.8040
+   bond_coeff   78    10.0000   5.4700
+   bond_coeff   79    10.0000   5.0000
+   bond_coeff   80    10.0000   6.3630
+   bond_coeff   81    10.0000   3.8250
+   bond_coeff   82    10.0000   5.3800
+   bond_coeff   83    10.0000   5.2550
+   bond_coeff   84    10.0000   6.3870
+   bond_coeff   85    10.0000   3.7900
+   bond_coeff   86    10.0000   5.4170
+   bond_coeff   87    10.0000   5.1150
+   bond_coeff   88    10.0000   5.8650
+   bond_coeff   89    10.0000   3.7840
+   bond_coeff   90    10.0000   5.5250
+   bond_coeff   91    10.0000   5.1770
+   bond_coeff   92    10.0000   6.1140
+   bond_coeff   93    10.0000   3.7940
+   bond_coeff   94    10.0000   5.5810
+   bond_coeff   95    10.0000   5.4890
+   bond_coeff   96    10.0000   3.8160
+   bond_coeff   97    10.0000   5.6170
+   bond_coeff   98    10.0000   3.8100
+   bond_coeff   99    10.0000   3.7910
+   bond_coeff   100    10.0000   5.3250
+   bond_coeff   101    10.0000   4.7380
+   bond_coeff   102    10.0000   5.8370
+   bond_coeff   103    10.0000   3.8170
+   bond_coeff   104    10.0000   5.4860
+   bond_coeff   105    10.0000   5.1030
+   bond_coeff   106    10.0000   6.3170
+   bond_coeff   107    10.0000   3.7990
+   bond_coeff   108    10.0000   5.2830
+   bond_coeff   109    10.0000   5.0850
+   bond_coeff   110    10.0000   6.0950
+   bond_coeff   111    10.0000   3.7790
+   bond_coeff   112    10.0000   5.5560
+   bond_coeff   113    10.0000   4.9920
+   bond_coeff   114    10.0000   6.4150
+   bond_coeff   115    10.0000   3.8030
+   bond_coeff   116    10.0000   5.2300
+   bond_coeff   117    10.0000   5.1560
+   bond_coeff   118    10.0000   6.6200
+   bond_coeff   119    10.0000   3.7940
+   bond_coeff   120    10.0000   5.4430
+   bond_coeff   121    10.0000   5.1390
+   bond_coeff   122    10.0000   6.4070
+   bond_coeff   123    10.0000   3.8090
+   bond_coeff   124    10.0000   5.3150
+   bond_coeff   125    10.0000   5.0910
+   bond_coeff   126    10.0000   6.1800
+   bond_coeff   127    10.0000   3.7950
+   bond_coeff   128    10.0000   5.5150
+   bond_coeff   129    10.0000   5.1040
+   bond_coeff   130    10.0000   6.1940
+   bond_coeff   131    10.0000   3.8080
+   bond_coeff   132    10.0000   5.4080
+   bond_coeff   133    10.0000   5.0790
+   bond_coeff   134    10.0000   6.3090
+   bond_coeff   135    10.0000   3.8190
+   bond_coeff   136    10.0000   5.4120
+   bond_coeff   137    10.0000   5.1370
+   bond_coeff   138    10.0000   6.3730
+   bond_coeff   139    10.0000   3.8070
+   bond_coeff   140    10.0000   5.4560
+   bond_coeff   141    10.0000   5.2120
+   bond_coeff   142    10.0000   6.1380
+   bond_coeff   143    10.0000   3.8020
+   bond_coeff   144    10.0000   5.4540
+   bond_coeff   145    10.0000   5.0370
+   bond_coeff   146    10.0000   6.1880
+   bond_coeff   147    10.0000   3.8040
+   bond_coeff   148    10.0000   5.4680
+   bond_coeff   149    10.0000   5.1930
+   bond_coeff   150    10.0000   6.1960
+   bond_coeff   151    10.0000   3.7930
+   bond_coeff   152    10.0000   5.3860
+   bond_coeff   153    10.0000   4.9280
+   bond_coeff   154    10.0000   6.0480
+   bond_coeff   155    10.0000   3.8230
+   bond_coeff   156    10.0000   5.3960
+   bond_coeff   157    10.0000   4.9720
+   bond_coeff   158    10.0000   6.2650
+   bond_coeff   159    10.0000   3.7780
+   bond_coeff   160    10.0000   5.3010
+   bond_coeff   161    10.0000   5.0670
+   bond_coeff   162    10.0000   6.1780
+   bond_coeff   163    10.0000   3.7780
+   bond_coeff   164    10.0000   5.4560
+   bond_coeff   165    10.0000   5.0310
+   bond_coeff   166    10.0000   6.3990
+   bond_coeff   167    10.0000   3.8000
+   bond_coeff   168    10.0000   5.3480
+   bond_coeff   169    10.0000   5.2020
+   bond_coeff   170    10.0000   3.7870
+   bond_coeff   171    10.0000   5.4230
+   bond_coeff   172    10.0000   3.8250
+   bond_coeff   173    10.0000   3.7960
+   bond_coeff   174    10.0000   5.2710
+   bond_coeff   175    10.0000   5.3160
+   bond_coeff   176    10.0000   3.7880
+   bond_coeff   177    10.0000   5.3950
+   bond_coeff   178    10.0000   3.8010
+   bond_coeff   179    10.0000   3.8220
+   bond_coeff   180    10.0000   5.5080
+   bond_coeff   181    10.0000   4.9800
+   bond_coeff   182    10.0000   6.0400
+   bond_coeff   183    10.0000   3.8030
+   bond_coeff   184    10.0000   5.4260
+   bond_coeff   185    10.0000   5.0960
+   bond_coeff   186    10.0000   5.9170
+   bond_coeff   187    10.0000   3.7940
+   bond_coeff   188    10.0000   5.3600
+   bond_coeff   189    10.0000   4.6610
+   bond_coeff   190    10.0000   6.1790
+   bond_coeff   191    10.0000   3.7990
+   bond_coeff   192    10.0000   5.2730
+   bond_coeff   193    10.0000   5.2790
+   bond_coeff   194    10.0000   6.1850
+   bond_coeff   195    10.0000   3.7740
+   bond_coeff   196    10.0000   5.4800
+   bond_coeff   197    10.0000   5.1100
+   bond_coeff   198    10.0000   5.9550
+   bond_coeff   199    10.0000   3.7970
+   bond_coeff   200    10.0000   5.6360
+   bond_coeff   201    10.0000   5.5880
+   bond_coeff   202    10.0000   3.7910
+   bond_coeff   203    10.0000   5.6460
+   bond_coeff   204    10.0000   3.8050
+   bond_coeff   205    10.0000   3.7860
+   bond_coeff   206    10.0000   5.5370
+   bond_coeff   207    10.0000   5.0510
+   bond_coeff   208    10.0000   5.9930
+   bond_coeff   209    10.0000   3.8120
+   bond_coeff   210    10.0000   5.5070
+   bond_coeff   211    10.0000   5.2970
+   bond_coeff   212    10.0000   6.0660
+   bond_coeff   213    10.0000   3.8060
+   bond_coeff   214    10.0000   5.4860
+   bond_coeff   215    10.0000   4.9220
+   bond_coeff   216    10.0000   6.2320
+   bond_coeff   217    10.0000   3.7910
+   bond_coeff   218    10.0000   5.3760
+   bond_coeff   219    10.0000   5.1810
+   bond_coeff   220    10.0000   6.7100
+   bond_coeff   221    10.0000   3.8070
+   bond_coeff   222    10.0000   5.3360
+   bond_coeff   223    10.0000   5.2090
+   bond_coeff   224    10.0000   6.2870
+   bond_coeff   225    10.0000   3.8030
+   bond_coeff   226    10.0000   5.4570
+   bond_coeff   227    10.0000   5.0650
+   bond_coeff   228    10.0000   6.1440
+   bond_coeff   229    10.0000   3.8260
+   bond_coeff   230    10.0000   5.5000
+   bond_coeff   231    10.0000   5.2380
+   bond_coeff   232    10.0000   6.3190
+   bond_coeff   233    10.0000   3.7880
+   bond_coeff   234    10.0000   5.4500
+   bond_coeff   235    10.0000   5.0960
+   bond_coeff   236    10.0000   6.4330
+   bond_coeff   237    10.0000   3.8110
+   bond_coeff   238    10.0000   5.4290
+   bond_coeff   239    10.0000   5.1700
+   bond_coeff   240    10.0000   6.1460
+   bond_coeff   241    10.0000   3.8370
+   bond_coeff   242    10.0000   5.3190
+   bond_coeff   243    10.0000   4.8140
+   bond_coeff   244    10.0000   5.9860
+   bond_coeff   245    10.0000   3.7970
+   bond_coeff   246    10.0000   5.4910
+   bond_coeff   247    10.0000   5.2230
+   bond_coeff   248    10.0000   6.5580
+   bond_coeff   249    10.0000   3.8000
+   bond_coeff   250    10.0000   5.4320
+   bond_coeff   251    10.0000   5.2500
+   bond_coeff   252    10.0000   6.5010
+   bond_coeff   253    10.0000   3.8080
+   bond_coeff   254    10.0000   5.3880
+   bond_coeff   255    10.0000   5.0410
+   bond_coeff   256    10.0000   6.2360
+   bond_coeff   257    10.0000   3.8110
+   bond_coeff   258    10.0000   5.3680
+   bond_coeff   259    10.0000   5.0670
+   bond_coeff   260    10.0000   6.3060
+   bond_coeff   261    10.0000   3.7950
+   bond_coeff   262    10.0000   5.5020
+   bond_coeff   263    10.0000   5.2840
+   bond_coeff   264    10.0000   6.2650
+   bond_coeff   265    10.0000   3.8270
+   bond_coeff   266    10.0000   5.4820
+   bond_coeff   267    10.0000   5.0960
+   bond_coeff   268    10.0000   6.0740
+   bond_coeff   269    10.0000   3.8180
+   bond_coeff   270    10.0000   5.4600
+   bond_coeff   271    10.0000   5.2570
+   bond_coeff   272    10.0000   6.2310
+   bond_coeff   273    10.0000   3.8060
+   bond_coeff   274    10.0000   5.6310
+   bond_coeff   275    10.0000   5.3260
+   bond_coeff   276    10.0000   3.7920
+   bond_coeff   277    10.0000   5.4020
+   bond_coeff   278    10.0000   3.7920
+   bond_coeff   279    10.0000   3.7940
+   bond_coeff   280    10.0000   5.1890
+   bond_coeff   281    10.0000   4.7980
+   bond_coeff   282    10.0000   6.0650
+   bond_coeff   283    10.0000   3.8000
+   bond_coeff   284    10.0000   5.4520
+   bond_coeff   285    10.0000   5.1840
+   bond_coeff   286    10.0000   6.0380
+   bond_coeff   287    10.0000   3.7900
+   bond_coeff   288    10.0000   5.4570
+   bond_coeff   289    10.0000   5.0160
+   bond_coeff   290    10.0000   5.9550
+   bond_coeff   291    10.0000   3.7890
+   bond_coeff   292    10.0000   5.4550
+   bond_coeff   293    10.0000   5.0340
+   bond_coeff   294    10.0000   5.7330
+   bond_coeff   295    10.0000   3.7970
+   bond_coeff   296    10.0000   5.3570
+   bond_coeff   297    10.0000   4.8360
+   bond_coeff   298    10.0000   5.7900
+   bond_coeff   299    10.0000   3.8040
+   bond_coeff   300    10.0000   5.5300
+   bond_coeff   301    10.0000   5.1600
+   bond_coeff   302    10.0000   5.8420
+   bond_coeff   303    10.0000   3.7950
+   bond_coeff   304    10.0000   5.3450
+   bond_coeff   305    10.0000   4.6470
+   bond_coeff   306    10.0000   6.0390
+   bond_coeff   307    10.0000   3.7650
+   bond_coeff   308    10.0000   5.2950
+   bond_coeff   309    10.0000   5.1030
+   bond_coeff   310    10.0000   5.9760
+   bond_coeff   311    10.0000   3.7940
+   bond_coeff   312    10.0000   5.3520
+   bond_coeff   313    10.0000   4.8620
+   bond_coeff   314    10.0000   5.9260
+   bond_coeff   315    10.0000   3.8110
+   bond_coeff   316    10.0000   5.5680
+   bond_coeff   317    10.0000   5.2640
+   bond_coeff   318    10.0000   6.6950
+   bond_coeff   319    10.0000   3.7760
+   bond_coeff   320    10.0000   5.3010
+   bond_coeff   321    10.0000   4.9830
+   bond_coeff   322    10.0000   3.7850
+   bond_coeff   323    10.0000   5.0810
+   bond_coeff   324    10.0000   3.7880
+   bond_coeff   325    10.0000   3.7970
+   bond_coeff   326    10.0000   5.4190
+   bond_coeff   327    10.0000   5.3550
+   bond_coeff   328    10.0000   6.5460
+   bond_coeff   329    10.0000   3.8050
+   bond_coeff   330    10.0000   5.4350
+   bond_coeff   331    10.0000   5.0840
+   bond_coeff   332    10.0000   5.3980
+   bond_coeff   333    10.0000   3.7970
+   bond_coeff   334    10.0000   5.4050
+   bond_coeff   335    10.0000   5.0020
+   bond_coeff   336    10.0000   5.0160
+   bond_coeff   337    10.0000   3.8000
+   bond_coeff   338    10.0000   5.8510
+   bond_coeff   339    10.0000   5.4730
+   bond_coeff   340    10.0000   6.0090
+   bond_coeff   341    10.0000   3.8030
+   bond_coeff   342    10.0000   5.5860
+   bond_coeff   343    10.0000   5.0090
+   bond_coeff   344    10.0000   5.8940
+   bond_coeff   345    10.0000   3.8010
+   bond_coeff   346    10.0000   5.1180
+   bond_coeff   347    10.0000   4.9180
+   bond_coeff   348    10.0000   5.2250
+   bond_coeff   349    10.0000   6.5420
+   bond_coeff   350    10.0000   3.8040
+   bond_coeff   351    10.0000   5.8300
+   bond_coeff   352    10.0000   6.0770
+   bond_coeff   353    10.0000   4.8820
+   bond_coeff   354    10.0000   3.8180
+   bond_coeff   355    10.0000   6.2570
+   bond_coeff   356    10.0000   5.4990
+   bond_coeff   357    10.0000   6.9520
+   bond_coeff   358    10.0000   3.7830
+   bond_coeff   359    10.0000   5.3280
+   bond_coeff   360    10.0000   6.0360
+   bond_coeff   361    10.0000   6.3240
+   bond_coeff   362    10.0000   3.7790
+   bond_coeff   363    10.0000   5.4800
+   bond_coeff   364    10.0000   4.6370
+   bond_coeff   365    10.0000   3.8040
+   bond_coeff   366    10.0000   5.5830
+   bond_coeff   367    10.0000   3.7980
+   bond_coeff   368    10.0000   3.8270
+   bond_coeff   369    10.0000   6.0790
+   bond_coeff   370    10.0000   5.7620
+   bond_coeff   371    10.0000   6.9660
+   bond_coeff   372    10.0000   3.7990
+   bond_coeff   373    10.0000   5.4410
+   bond_coeff   374    10.0000   5.6300
+   bond_coeff   375    10.0000   6.7520
+   bond_coeff   376    10.0000   3.7920
+   bond_coeff   377    10.0000   5.4770
+   bond_coeff   378    10.0000   5.3220
+   bond_coeff   379    10.0000   5.5450
+   bond_coeff   380    10.0000   3.8000
+   bond_coeff   381    10.0000   5.6900
+   bond_coeff   382    10.0000   5.2210
+   bond_coeff   383    10.0000   5.9220
+   bond_coeff   384    10.0000   3.7910
+   bond_coeff   385    10.0000   5.6170
+   bond_coeff   386    10.0000   5.2970
+   bond_coeff   387    10.0000   6.6250
+   bond_coeff   388    10.0000   3.7830
+   bond_coeff   389    10.0000   5.2610
+   bond_coeff   390    10.0000   5.1920
+   bond_coeff   391    10.0000   3.7920
+   bond_coeff   392    10.0000   5.5160
+   bond_coeff   393    10.0000   3.7990
+   bond_coeff   394    10.0000   3.7940
+   bond_coeff   395    10.0000   5.2230
+   bond_coeff   396    10.0000   4.8160
+   bond_coeff   397    10.0000   5.9840
+   bond_coeff   398    10.0000   3.8010
+   bond_coeff   399    10.0000   5.4940
+   bond_coeff   400    10.0000   5.4280
+   bond_coeff   401    10.0000   5.7790
+   bond_coeff   402    10.0000   3.8070
+   bond_coeff   403    10.0000   5.7290
+   bond_coeff   404    10.0000   5.3240
+   bond_coeff   405    10.0000   5.5120
+   bond_coeff   406    10.0000   3.8070
+   bond_coeff   407    10.0000   5.6260
+   bond_coeff   408    10.0000   5.2360
+   bond_coeff   409    10.0000   3.7670
+   bond_coeff   410    10.0000   5.5210
+   bond_coeff   411    10.0000   3.7740
+   bond_coeff   412    10.0000  11.7320
+   bond_coeff   413    10.0000   9.6780
+   bond_coeff   414    10.0000   6.2760
+   bond_coeff   415    10.0000   8.6050
+   bond_coeff   416    10.0000  10.2910
+   bond_coeff   417    10.0000   7.9840
+   bond_coeff   418    10.0000   7.0200
+   bond_coeff   419    10.0000  10.1870
+   bond_coeff   420    10.0000  10.6300
+   bond_coeff   421    10.0000   6.9130
+   bond_coeff   422    10.0000   7.3520
+   bond_coeff   423    10.0000  10.5840
+   bond_coeff   424    10.0000   9.7110
+   bond_coeff   425    10.0000   6.9140
+   bond_coeff   426    10.0000  11.3420
+   bond_coeff   427    10.0000  11.9770
+   bond_coeff   428    10.0000   8.8970
+   bond_coeff   429    10.0000   6.7170
+   bond_coeff   430    10.0000   9.2980
+   bond_coeff   431    10.0000  10.1150
+   bond_coeff   432    10.0000   7.1040
+   bond_coeff   433    10.0000   6.8230
+   bond_coeff   434    10.0000  10.5250
+   bond_coeff   435    10.0000  11.4810
+   bond_coeff   436    10.0000  10.1550
+   bond_coeff   437    10.0000  11.2390
+   bond_coeff   438    10.0000  14.6020
+   bond_coeff   439    10.0000  15.1890
+   bond_coeff   440    10.0000  21.8860
+   bond_coeff   441    10.0000  22.1930
+   bond_coeff   442    10.0000  19.3760
+   bond_coeff   443    10.0000  17.0070
+   bond_coeff   444    10.0000  18.0260
+   bond_coeff   445    10.0000  18.1140
+   bond_coeff   446    10.0000  14.4880
+   bond_coeff   447    10.0000  13.4330
+   bond_coeff   448    10.0000  15.9670
+   bond_coeff   449    10.0000  15.1170
+   bond_coeff   450    10.0000  11.5700
+   bond_coeff   451    10.0000  12.7180
+   bond_coeff   452    10.0000  15.5470
+   bond_coeff   453    10.0000  13.9290
+   bond_coeff   454    10.0000  24.3040
+   bond_coeff   455    10.0000  21.7030
+   bond_coeff   456    10.0000  21.1200
+   bond_coeff   457    10.0000  24.5410
+   bond_coeff   458    10.0000  24.5210
+   bond_coeff   459    10.0000  21.5570
+   bond_coeff   460    10.0000  23.1150
+   bond_coeff   461    10.0000  24.1200
+   bond_coeff   462    10.0000  19.1830
+   bond_coeff   463    10.0000  21.2580
+   bond_coeff   464    10.0000  18.9230
+   bond_coeff   465    10.0000  18.2020
+   bond_coeff   466    10.0000  21.9520
+   bond_coeff   467    10.0000  23.1800
+   bond_coeff   468    10.0000  21.4120
+   bond_coeff   469    10.0000  22.6350
+   bond_coeff   470    10.0000  19.8710
+   bond_coeff   471    10.0000  19.8260
+   bond_coeff   472    10.0000  16.0410
+   bond_coeff   473    10.0000  16.3390
+   bond_coeff   474    10.0000  19.0680
+   bond_coeff   475    10.0000  17.5210
+   bond_coeff   476    10.0000  14.0260
+   bond_coeff   477    10.0000  15.1130
+   bond_coeff   478    10.0000  16.7200
+   bond_coeff   479    10.0000  13.9580
+   bond_coeff   480    10.0000  11.9240
+   bond_coeff   481    10.0000  14.7080
+   bond_coeff   482    10.0000  14.5860
+   bond_coeff   483    10.0000  11.1610
+   bond_coeff   484    10.0000  12.8750
+   bond_coeff   485    10.0000  12.4480
+   bond_coeff   486    10.0000  14.4690
+   bond_coeff   487    10.0000  12.1620
+   bond_coeff   488    10.0000   8.9750
+   bond_coeff   489    10.0000  10.1130
+   bond_coeff   490    10.0000  11.8140
+   bond_coeff   491    10.0000   9.2420
+   bond_coeff   492    10.0000  13.6720
+   bond_coeff   493    10.0000  13.4410
+   bond_coeff   494    10.0000  16.8730
+   bond_coeff   495    10.0000  17.0960
+   bond_coeff   496    10.0000  14.1370
+   bond_coeff   497    10.0000  15.4990
+   bond_coeff   498    10.0000  18.8870
+   bond_coeff   499    10.0000  18.0160
+   bond_coeff   500    10.0000  23.0610
+   bond_coeff   501    10.0000  20.1930
+   bond_coeff   502    10.0000  21.3220
+   bond_coeff   503    10.0000  21.7040
+   bond_coeff   504    10.0000  18.1920
+   bond_coeff   505    10.0000  16.9170
+   bond_coeff   506    10.0000  19.3710
+   bond_coeff   507    10.0000  18.9470
+   bond_coeff   508    10.0000  23.0140
+   bond_coeff   509    10.0000  22.3430
+   bond_coeff   510    10.0000  22.4550
+   bond_coeff   511    10.0000  19.8990
+   bond_coeff   512    10.0000  17.4770
+   bond_coeff   513    10.0000  18.0740
+   bond_coeff   514    10.0000  18.0840
+   bond_coeff   515    10.0000   9.0320
+   bond_coeff   516    10.0000   7.1680
+   bond_coeff   517    10.0000   9.3450
+   bond_coeff   518    10.0000  11.0630
+   bond_coeff   519    10.0000   8.5590
+   bond_coeff   520    10.0000   7.7400
+   bond_coeff   521    10.0000  10.8390
+   bond_coeff   522    10.0000  11.3780
+   bond_coeff   523    10.0000  12.0000
+   bond_coeff   524    10.0000  14.1820
+   bond_coeff   525    10.0000  15.3760
+   bond_coeff   526    10.0000  12.0650
+   bond_coeff   527    10.0000  10.5920
+   bond_coeff   528    10.0000  12.6810
+   bond_coeff   529    10.0000  11.4260
+   bond_coeff   530    10.0000   7.6940
+   bond_coeff   531    10.0000   8.4830
+   bond_coeff   532    10.0000  10.7280
+   bond_coeff   533    10.0000   6.4850
+   bond_coeff   534    10.0000   9.3990
+   bond_coeff   535    10.0000  11.8980
+   bond_coeff   536    10.0000  10.6270
+   bond_coeff   537    10.0000  10.9750
+   bond_coeff   538    10.0000  14.2450
+   bond_coeff   539    10.0000  15.5560
+   bond_coeff   540    10.0000  15.0200
+   bond_coeff   541    10.0000  16.4180
+   bond_coeff   542    10.0000  19.4150
+   bond_coeff   543    10.0000   7.2100
+   bond_coeff   544    10.0000   6.7620
+   bond_coeff   545    10.0000   9.4630
+   bond_coeff   546    10.0000  11.9000
+   bond_coeff   547    10.0000  11.8870
+   bond_coeff   548    10.0000  12.4480
+   bond_coeff   549    10.0000  15.3400
+   bond_coeff   550    10.0000  16.8300
+   bond_coeff   551    10.0000  16.6920
+   bond_coeff   552    10.0000  18.3780
+   bond_coeff   553    10.0000   5.1390
+   bond_coeff   554    10.0000   8.5300
+   bond_coeff   555    10.0000   8.6670
+   bond_coeff   556    10.0000   7.3460
+   bond_coeff   557    10.0000   9.7760
+   bond_coeff   558    10.0000  12.5950
+   bond_coeff   559    10.0000  11.1530
+   bond_coeff   560    10.0000   9.3130
+   bond_coeff   561    10.0000  12.5740
+   bond_coeff   562    10.0000  14.9140
+   bond_coeff   563    10.0000  21.1280
+   bond_coeff   564    10.0000  21.5940
+   bond_coeff   565    10.0000  20.1470
+   bond_coeff   566    10.0000  17.2960
+   bond_coeff   567    10.0000  16.5650
+   bond_coeff   568    10.0000  16.8650
+   bond_coeff   569    10.0000  14.4820
+   bond_coeff   570    10.0000  11.6910
+   bond_coeff   571    10.0000  12.6460
+   bond_coeff   572    10.0000  12.3310
+   bond_coeff   573    10.0000   9.1530
+   bond_coeff   574    10.0000   8.1370
+   bond_coeff   575    10.0000   9.4730
+   bond_coeff   576    10.0000   7.6160
+   bond_coeff   577    10.0000   4.0810
+   bond_coeff   578    10.0000   6.3750
+   bond_coeff   579    10.0000   8.0220
+   bond_coeff   580    10.0000   5.6870
+   bond_coeff   581    10.0000   5.6650
+   bond_coeff   582    10.0000   9.2420
+   bond_coeff   583    10.0000  10.0830
+   bond_coeff   584    10.0000  22.7080
+   bond_coeff   585    10.0000  23.8600
+   bond_coeff   586    10.0000  24.7520
+   bond_coeff   587    10.0000  21.3270
+   bond_coeff   588    10.0000  19.7640
+   bond_coeff   589    10.0000  22.0460
+   bond_coeff   590    10.0000  21.1140
+   bond_coeff   591    10.0000  17.3630
+   bond_coeff   592    10.0000  18.4300
+   bond_coeff   593    10.0000  20.6670
+   bond_coeff   594    10.0000  18.1110
+   bond_coeff   595    10.0000  15.7280
+   bond_coeff   596    10.0000  18.9020
+   bond_coeff   597    10.0000  19.7900
+   bond_coeff   598    10.0000  16.1500
+   bond_coeff   599    10.0000  16.8580
+   bond_coeff   600    10.0000  20.0050
+   bond_coeff   601    10.0000  18.4150
+   bond_coeff   602    10.0000  11.6640
+   bond_coeff   603    10.0000   9.6490
+   bond_coeff   604    10.0000   6.4280
+   bond_coeff   605    10.0000   9.0640
+   bond_coeff   606    10.0000  10.2070
+   bond_coeff   607    10.0000   7.5300
+   bond_coeff   608    10.0000   5.1940
+   bond_coeff   609    10.0000   8.2350
+   bond_coeff   610    10.0000   8.3890
+   bond_coeff   611    10.0000   5.4470
+   bond_coeff   612    10.0000   5.9800
+   bond_coeff   613    10.0000   9.2640
+   bond_coeff   614    10.0000   9.1750
+   bond_coeff   615    10.0000   6.4450
+   bond_coeff   616    10.0000   8.4880
+   bond_coeff   617    10.0000  11.5400
+   bond_coeff   618    10.0000  10.8300
+   bond_coeff   619    10.0000  10.1280
+   bond_coeff   620    10.0000  13.1740
+   bond_coeff   621    10.0000  15.3130
+   bond_coeff   622    10.0000  13.8960
+   bond_coeff   623    10.0000  12.6020
+   bond_coeff   624    10.0000  11.6820
+   bond_coeff   625    10.0000   8.1820
+   bond_coeff   626    10.0000   7.9620
+   bond_coeff   627    10.0000   9.0780
+   bond_coeff   628    10.0000   9.8030
+   bond_coeff   629    10.0000   8.2990
+   bond_coeff   630    10.0000   5.2770
+   bond_coeff   631    10.0000  11.1550
+   bond_coeff   632    10.0000  12.3650
+   bond_coeff   633    10.0000  10.0170
+   bond_coeff   634    10.0000   6.9530
+   bond_coeff   635    10.0000   9.0310
+   bond_coeff   636    10.0000   9.9290
+   bond_coeff   637    10.0000   6.8810
+   bond_coeff   638    10.0000   6.3820
+   bond_coeff   639    10.0000  10.1670
+   bond_coeff   640    10.0000   9.5200
+   bond_coeff   641    10.0000  11.6020
+   bond_coeff   642    10.0000  12.0590
+   bond_coeff   643    10.0000   8.5830
+   bond_coeff   644    10.0000   7.6490
+   bond_coeff   645    10.0000  11.0460
+   bond_coeff   646    10.0000  10.6770
+   bond_coeff   647    10.0000   7.5090
+   bond_coeff   648    10.0000   8.4020
+   bond_coeff   649    10.0000  11.8590
+   bond_coeff   650    10.0000  11.0980
+   bond_coeff   651    10.0000   7.7460
+   bond_coeff   652    10.0000   9.8460
+   bond_coeff   653    10.0000  11.9410
+   bond_coeff   654    10.0000   6.7340
+   bond_coeff   655    10.0000  10.2650
+   bond_coeff   656    10.0000  11.7410
+   bond_coeff   657    10.0000  10.1310
+   bond_coeff   658    10.0000  11.3350
+   bond_coeff   659    10.0000  14.5410
+   bond_coeff   660    10.0000  15.0910
+   bond_coeff   661    10.0000  14.3640
+   bond_coeff   662    10.0000  16.7150
+   bond_coeff   663    10.0000  18.9760
+   bond_coeff   664    10.0000  19.3280
+   bond_coeff   665    10.0000  19.7440
+   bond_coeff   666    10.0000  22.4200
+   bond_coeff   667    10.0000  24.0660
+   bond_coeff   668    10.0000   5.7970
+   bond_coeff   669    10.0000   4.7080
+   bond_coeff   670    10.0000   8.4540
+   bond_coeff   671    10.0000   8.9390
+   bond_coeff   672    10.0000   7.3830
+   bond_coeff   673    10.0000   9.3220
+   bond_coeff   674    10.0000  12.1720
+   bond_coeff   675    10.0000  11.7400
+   bond_coeff   676    10.0000  10.8250
+   bond_coeff   677    10.0000  14.1980
+   bond_coeff   678    10.0000  15.9190
+   bond_coeff   679    10.0000  14.5530
+   bond_coeff   680    10.0000  15.7840
+   bond_coeff   681    10.0000  19.0010
+   bond_coeff   682    10.0000  22.3870
+   bond_coeff   683    10.0000  20.4620
+   bond_coeff   684    10.0000  18.5890
+   bond_coeff   685    10.0000  17.1720
+   bond_coeff   686    10.0000  16.2910
+   bond_coeff   687    10.0000  15.1620
+   bond_coeff   688    10.0000  13.7410
+   bond_coeff   689    10.0000  11.7410
+   bond_coeff   690    10.0000  11.1810
+   bond_coeff   691    10.0000  10.9580
+   bond_coeff   692    10.0000   9.4960
+   bond_coeff   693    10.0000   5.8490
+   bond_coeff   694    10.0000   7.2040
+   bond_coeff   695    10.0000  16.8220
+   bond_coeff   696    10.0000  16.2650
+   bond_coeff   697    10.0000  12.8570
+   bond_coeff   698    10.0000  11.7580
+   bond_coeff   699    10.0000  13.5710
+   bond_coeff   700    10.0000  13.3220
+   bond_coeff   701    10.0000   9.6480
+   bond_coeff   702    10.0000   9.6090
+   bond_coeff   703    10.0000  12.7900
+   bond_coeff   704    10.0000  13.5780
+   bond_coeff   705    10.0000  10.1470
+   bond_coeff   706    10.0000   9.7170
+   bond_coeff   707    10.0000  13.4520
+   bond_coeff   708    10.0000  14.6110
+   bond_coeff   709    10.0000  12.3360
+   bond_coeff   710    10.0000   8.7680
+   bond_coeff   711    10.0000  10.0520
+   bond_coeff   712    10.0000  11.5700
+   bond_coeff   713    10.0000   8.5120
+   bond_coeff   714    10.0000   6.2460
+   bond_coeff   715    10.0000   9.4360
+   bond_coeff   716    10.0000  10.6060
+   bond_coeff   717     0.0100  23.5970
+   bond_coeff   718     0.0100  21.3860
+   bond_coeff   719     0.0100  18.4650
+   bond_coeff   720     0.0100  19.9740
+   bond_coeff   721     0.0100  20.4190
+   bond_coeff   722     0.0100  16.9270
+   bond_coeff   723     0.0100  15.6920
+   bond_coeff   724     0.0100  18.6200
+   bond_coeff   725     0.0100  17.9370
+   bond_coeff   726     0.0100  14.2620
+   bond_coeff   727     0.0100  15.7740
+   bond_coeff   728     0.0100  18.6480
+   bond_coeff   729     0.0100  16.6210
+   bond_coeff   730     0.0100  15.5480
+   bond_coeff   731     0.0100  24.6300
+   bond_coeff   732     0.0100  21.9690
+   bond_coeff   733     0.0100  19.8430
+   bond_coeff   734     0.0100  20.9580
+   bond_coeff   735     0.0100  20.1540
+   bond_coeff   736     0.0100  16.6590
+   bond_coeff   737     0.0100  16.1770
+   bond_coeff   738     0.0100  18.2010
+   bond_coeff   739     0.0100  16.2550
+   bond_coeff   740     0.0100  12.9810
+   bond_coeff   741     0.0100  14.8150
+   bond_coeff   742     0.0100  16.0040
+   bond_coeff   743     0.0100  12.5040
+   bond_coeff   744     0.0100  12.1930
+   bond_coeff   745     0.0100  24.5430
+   bond_coeff   746     0.0100  23.5240
+   bond_coeff   747     0.0100  21.7200
+   bond_coeff   748     0.0100  22.9370
+   bond_coeff   749     0.0100  24.0230
+   bond_coeff   750     0.0100  23.5080
+   bond_coeff   751     0.0100  20.1400
+   bond_coeff   752     0.0100  19.1600
+   bond_coeff   753     0.0100  21.0680
+   bond_coeff   754     0.0100  19.2640
+   bond_coeff   755     0.0100  16.1430
+   bond_coeff   756     0.0100  20.0430
+   bond_coeff   757     0.0100  19.3360
+   bond_coeff   758     0.0100  16.3480
+   bond_coeff   759     0.0100  15.2720
+   bond_coeff   760     0.0100  15.8350
+   bond_coeff   761     0.0100  14.0810
+   bond_coeff   762     0.0100  10.9160
+   bond_coeff   763     0.0100  11.6300
+   bond_coeff   764     0.0100  12.2640
+   bond_coeff   765     0.0100   9.2230
+   bond_coeff   766     0.0100   7.2030
+   bond_coeff   767     0.0100   9.7060
+   bond_coeff   768     0.0100   8.5930
+   bond_coeff   769     0.0100   4.9330
+   bond_coeff   770    10.0000  16.6930
+   bond_coeff   771    10.0000  14.0970
+   bond_coeff   772    10.0000   8.5150
+   bond_coeff   773    10.0000   6.0790
+   bond_coeff   774    10.0000  19.8170
+   bond_coeff   775    10.0000  20.1490
+   bond_coeff   776    10.0000  21.9610
+   bond_coeff   777    10.0000  21.6880
+   bond_coeff   778    10.0000  16.3970
+   bond_coeff   779    10.0000  14.2300
+   bond_coeff   780    10.0000   3.9830
+   bond_coeff   781    10.0000  14.0580
+   bond_coeff   782    10.0000  17.8080
+   bond_coeff   783    10.0000  10.8120
+   bond_coeff   784    10.0000  22.8540
+   bond_coeff   785    10.0000  20.0120
+   bond_coeff   786    10.0000   8.1780
+   bond_coeff   787    10.0000  17.1920
+   bond_coeff   788     1.0000   6.7390
+   bond_coeff   789     1.0000   5.1680
+   bond_coeff   790     1.0000   8.8910
+   bond_coeff   791     1.0000  10.0550
+   bond_coeff   792     1.0000   8.1750
+   bond_coeff   793     1.0000   8.4020
+   bond_coeff   794     1.0000  11.7580
+   bond_coeff   795     1.0000  12.7210
+   bond_coeff   796     1.0000  11.9380
+   bond_coeff   797     1.0000  11.7320
+   bond_coeff   798     1.0000  14.7680
+   bond_coeff   799     1.0000  17.0700
+   bond_coeff   800     1.0000  14.5020
+   bond_coeff   801     1.0000  15.6940
+   bond_coeff   802     1.0000  13.8410
+   bond_coeff   803     1.0000  16.8950
+   bond_coeff   804     1.0000  16.6950
+   bond_coeff   805     1.0000  13.1830
+   bond_coeff   806     1.0000  13.6300
+   bond_coeff   807     1.0000  17.2580
+   bond_coeff   808     1.0000  16.3060
+   bond_coeff   809     1.0000  13.6220
+   bond_coeff   810     1.0000  14.6010
+   bond_coeff   811     1.0000  18.0930
+   bond_coeff   812     1.0000  18.8480
+   bond_coeff   813     1.0000  16.6270
+   bond_coeff   814     10.0 11.1000 
+   bond_coeff   815     10.0 12.6000 
