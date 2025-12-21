@@ -1,0 +1,4 @@
+0.15   # fraction of non-clustered mols to make "active"
+4      # number of sites that switch between active and inactive
+131 132 133 134   #list of atom types in active state
+135 136 137 138   #corresponding list of atom types in inactive state

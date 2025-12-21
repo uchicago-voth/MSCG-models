@@ -1,0 +1,7 @@
+numInterfaces 5   #this line and the following should be combined into one line, but basically indicate the number of potential contacts between mols
+nAtomsPerInterface 1 # = numInterfaces * nnAtomsPerInterface
+31 132   #each of these lines contains the atomtypes that define each mol-mol contact
+31 136
+33 133
+33 137
+102 102

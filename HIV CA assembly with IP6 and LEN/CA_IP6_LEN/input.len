@@ -1,0 +1,48 @@
+variable TEMP           equal   300.0
+
+variable PRESS 		equal   0.0
+#variable SEED  		equal  	999
+variable SEED2   	equal   $( v_SEED + 1099 )
+variable SEED3  	equal   $( v_SEED + 80192 ) 
+variable SEED4  	equal   $( v_SEED + 7102 )
+variable SEED5 		equal   $( v_SEED + 30192 )
+
+# Create simulation box
+include         "system.init"
+region          cell block 0.0 900.0 0.0 900.0 0.0 900.0
+create_box	7 cell
+molecule        lena len.txt
+mass            1*7 20.0
+create_atoms    0 random numLEN ${SEED} NULL mol lena ${SEED} units box
+group           LEN type < 8
+
+include         "system.settings"
+
+fix r1          LEN rigid/small molecule
+
+
+timestep        10.0
+comm_style 	tiled
+comm_modify	mode single cutoff 40.0
+
+
+minimize 	1.0e-4 1.0e-6 100 1000
+
+
+fix 		1  all    nve
+fix 		2  all    langevin ${TEMP} ${TEMP} 100000.0 ${SEED3} zero yes
+fix 		b1 all balance 25000 1.05 rcb
+
+
+thermo 50000
+thermo_style  custom  step spcpu  temp  ke pe etotal
+
+dump 		1 all atom 100000 len.lammpstrj
+dump_modify 	1 sort id
+
+
+run 1000000
+
+write_dump 	all atom len.lammpstrj
+write_data 	len.data nocoeff
+
